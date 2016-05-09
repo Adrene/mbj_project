@@ -7,7 +7,7 @@
 
 .carousel-inner > .item > a > img {
       -webkit-filter: grayscale(90%);
-      filter: grayscale(90%); /* make all photos black and white */ 
+      /*filter:sepia(100%); */
       width: 100%;
       margin: auto;
   }
@@ -48,7 +48,7 @@ section.section.parallax h1 {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 section.section.parallax-1 {
-  background-image: url("../imgages/1.jpg");
+  background-color:rgb(69, 137, 122);
 }
 section.section.parallax-2 {
   background-image: url("../imgages/2.jpg");
