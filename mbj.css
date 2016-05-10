@@ -11,6 +11,11 @@
       width: 100%;
       margin: auto;
   }
+  
+#justify{
+  text-align: justify;
+  text-justify: inter-word;
+}
 
 section.section:last-child {
   margin-bottom: 0;
@@ -47,11 +52,11 @@ section.section.parallax h1 {
   text-transform: uppercase;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-section.section.parallax-1 {
+.onedance {
   background-color:rgb(69, 137, 122);
 }
 section.section.parallax-2 {
-  background-image: url("../imgages/2.jpg");
+   background-color:rgb(69, 137, 122);
 }
 section.section.parallax-3 {
   background-image: url("../imgages/3.jpg");
@@ -72,4 +77,238 @@ section.section.parallax-3 {
   section.section.parallax h1 {
     font-size: 160px;
   }
+}
+
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.hovereffect .overlay {
+  position: absolute;
+  overflow: hidden;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  width: 55%;
+  height: 81%;
+  left: 22%;
+  top: 10%;
+  border-radius: 80%;
+  border: 2px solid #FFF;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(50%,50%,0);
+  transform: translate3d(50%,50%,0);
+}
+
+.hovereffect:hover .overlay {
+  background-color: rgba(0,0,0,0.3);
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+.hovereffect:hover img {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="1.4" /><feFuncG type="linear" slope="1.4" /><feFuncB type="linear" slope="1.4" /></feComponentTransfer></filter></svg>#filter');
+  filter: brightness(1.4);
+  -webkit-filter: brightness(1.4);
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  padding: 10px;
+  background-color: transparent;
+  color: #FFF;
+  padding: 1em 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-150%,-400%,0);
+  transform: translate3d(-150%,-400%,0);
+}
+
+.hovereffect a, .hovereffect p {
+  color: #FFF;
+  padding: 1em 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-150%,-400%,0);
+  transform: translate3d(-150%,-400%,0);
+}
+
+.hovereffect:hover a, .hovereffect:hover p, .hovereffect:hover h2, .hovereffect:hover .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+/*blog*/
+
+.jumbotron {
+   background-image: url("http://123ve.vn/public/uploads/gallery/airplane-flight-sunset-1366x768.jpg");
+   background-size: cover;
+   height: 550px;
+   position: relative;
+   /*-webkit-filter: blur(3px);*/
+   /*-webkit-filter: grayscale(20%);*/
+}
+
+#bloghead{
+  font-size: 48px;
+  color: rgb(255,255,255);
+  text-align: center;
+  float: left;
+  position: relative;
+  left: 0px;
+  top: 0px;
+  z-index: 1000;
+  margin-bottom: -20px;
+  margin-top: 150px;
+  
+}
+
+.col-center {
+   float: none;
+   margin-right: auto;
+   margin-left: auto;
+}
+
+/* Footer */
+.footer-distributed{
+	background-color: rgb(192,192,192);
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	font: bold 16px sans-serif;
+	text-align: left;
+	padding: 50px 60px;
+	margin-top: 80px;
+	overflow: hidden;
+}
+
+/* Left Footer */
+
+.footer-distributed .footer-left{
+	float: left;
+}
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 0 0 10px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+
+/* Right Footer */
+
+.footer-distributed .footer-right{
+	float: right;
+}
+
+/* The search form */
+
+.footer-distributed form{
+	position: relative;
+}
+
+.footer-distributed form input{
+	display: block;
+	border-radius: 3px;
+	box-sizing: border-box;
+	background-color:  #1f2022;
+	box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+	border: none;
+	font: inherit;
+	font-size: 14px;
+	font-weight: normal;
+	color:  #d1d2d2;
+
+	width: 500px;
+	padding: 18px 50px 18px 18px;
+}
+
+/*.footer-distributed form input:focus{
+	outline: none;}*/
+
+
+/* Magnify glass icon */
+
+.footer-distributed form i{
+	width: 18px;
+	height: 18px;
+	position: absolute;
+	top: 16px;
+	right: 18px;
+	color: #d1d2d2;
+	font-size: 18px;
+}
+
+/* Media queries to make footer responsive */
+
+@media (max-width: 1000px) {
+
+	.footer-distributed form input{
+		width: 300px;
+	}
+
+}
+
+@media (max-width: 800px) {
+
+	.footer-distributed{
+		padding: 30px;
+		text-align: center;
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-company-name{
+		margin-top: 10px;
+		font-size: 16px;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-right{
+		float: none;
+		max-width: 300px;
+		margin: 0 auto;
+	}
+
+	.footer-distributed .footer-left{
+		margin-bottom: 20px;
+	}
+
+	.footer-distributed form input{
+		width: 100%;
+	}
+
 }
