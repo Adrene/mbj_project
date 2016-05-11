@@ -191,7 +191,7 @@ section.section.parallax-3 {
 
 /* Footer */
 .footer-distributed{
-	background-color: rgb(192,192,192);
+	background-color: #E8E8E8;
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 	box-sizing: border-box;
 	width: 100%;
@@ -209,7 +209,7 @@ section.section.parallax-3 {
 }
 
 .footer-distributed .footer-links{
-	color:  #ffffff;
+	color: #2F4F4F;
 	margin: 0 0 10px;
 	padding: 0;
 }
@@ -222,7 +222,7 @@ section.section.parallax-3 {
 }
 
 .footer-distributed .footer-company-name{
-	color: #ffffff;
+	color: #2F4F4F;
 	font-size: 14px;
 	font-weight: normal;
 	margin: 0;
@@ -312,3 +312,94 @@ section.section.parallax-3 {
 	}
 
 }
+
+/* Contact and About us */
+
+#aboutheader{
+  background-image: url("http://gbaa.org/wp-content/uploads/2014/08/airplane.jpg");
+  background-size: cover;
+  background-position: left;
+  height: 600px;
+  /*-webkit-filter: grayscale(70%);*/
+}
+
+.aboutset{
+  font-size: 48px;
+  color: rgb(255,255,255);
+  text-align: center;
+  float: right;
+  position: relative;
+  left: 0px;
+  top: 0px;
+  z-index: 1000;
+  margin-bottom: -40px;
+  margin-top: 150px;
+  margin-left: 10px;
+}
+
+
+
+/* Panel */
+
+.panel {
+    border: 1px solid #f4511e; 
+    border-radius:0;
+    transition: box-shadow 0.5s;
+}
+
+.panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+}
+
+.panel-footer .btn:hover {
+    border: 1px solid #f4511e;
+    background-color: #fff !important;
+    color: #f4511e;
+}
+
+.panel-heading {
+    color: #fff;
+    background-color: #FF7F50 !important;
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.panel-footer {
+    background-color:  #FF7F50 !important;
+}
+
+.panel-footer .btn {
+    margin: 15px 0;
+    background-color: #f4511e;
+    color: #fff;
+}
+
+/*Glyphicons for services*/
+.logo-small {
+    color: #f4511e;
+    font-size: 50px;
+}
+
+.logo {
+    color: #f4511e;
+    font-size: 400px;
+}
+
+/*Contact */
+#contact{
+  background-image: url(http://www.gatwickairport.com/globalassets/global/b_0_business_and_community_images/b_7_aircraft_noise/dusk_756x350.jpg);
+  background-size: cover;
+  height: 550px;
+  position: relative;
+}
+
+  
+  
+  
+  
+  
+  
