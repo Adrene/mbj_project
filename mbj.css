@@ -322,14 +322,22 @@ section.section.parallax-3 {
   height: 600px;
   /*-webkit-filter: grayscale(70%);*/
 }
+.aboutsetp{
+   font-size: 48px;
+  color: rgb(255,255,255);
+  text-align: center;
+  position: absolute;
+  top: 50%;
+}
 
 .aboutset{
   font-size: 48px;
   color: rgb(255,255,255);
   text-align: center;
   float: right;
-  position: relative;
+  position: absolute;
   left: 0px;
+  right:10%;
   top: 0px;
   z-index: 1000;
   margin-bottom: -40px;
@@ -395,6 +403,16 @@ section.section.parallax-3 {
   background-size: cover;
   height: 550px;
   position: relative;
+}
+
+.overlay { 
+  color:#fff;
+  position:absolute;
+  z-index:12;
+  top:50%;
+  left:0;
+  width:100%;
+  text-align:center;
 }
 
   
